@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+<header class="ust-bar">
+    <h1 id="daktilo"></h1>
+    <button onclick="temaDegistir()">🌙 Tema</button>
+</header>
+
+<nav>
+    <a href="#hakkimda"><i class="fa-solid fa-user"></i> Hakkımda</a>
+<a href="#yetenekler"><i class="fa-solid fa-code"></i> Yetenekler</a>
+<a href="#projeler"><i class="fa-solid fa-laptop"></i> Projeler</a>
+<a href="#iletisim"><i class="fa-solid fa-envelope"></i> İletişim</a>
+</nav>
+
+<section id="hakkimda">
+    <h2>Hakkımda</h2>
+
+    <img height="500px;" src="src/a.jpeg", class="profil-foto">
+
+    <p>
+        Kendimi web geliştirme, kullanıcı arayüzü tasarımı ve JavaScript alanında geliştiriyorum.
+        Modern ve kullanıcı dostu projeler üretmeye odaklanıyorum.
+    </p>
+</section>
+
+<section id="yetenekler">
+    <h2>Yetenekler</h2>
+    <div class="bar"><div class="dolgu html">HTML</div></div>
+    <div class="bar"><div class="dolgu css">CSS</div></div>
+    <div class="bar"><div class="dolgu js">JavaScript</div></div>
+</section>
+
+<section id="projeler">
+    <h2>Projeler</h2>
+
+    <div class="butonlar">
+        <button onclick="filtrele('hepsi')">Tümü</button>
+        <button onclick="filtrele('web')">Web</button>
+        <button onclick="filtrele('mobil')">Mobil</button>
+    </div>
+
+    <div id="projeAlani"></div>
+</section>
+
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <p><i class="fa-solid fa-envelope"></i> halbintox@gmail.com</p>
+<p>
+<i class="fa-brands fa-github"></i>
+<a href="https://github.com/lSonHoliqaN/pr1" target="_blank">GitHub</a>
+</p>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-icerik">
+        <span onclick="modalKapat()" class="kapat">&times;</span>
+        <h2 id="modalBaslik"></h2>
+        <img id="modalResim">
+        <p id="modalAciklama"></p>
+    </div>
+</div>
+
+<div id="cursor" class="cursor"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
